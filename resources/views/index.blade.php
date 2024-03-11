@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     
-    <link rel="shortcut icon" href="/img/logoFundo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logoFundo.png') }}" type="image/x-icon">
 
     <title>Cripto Correio Elegante</title>
 </head>
 <body>
     <header>
         <a href="#">
-            <img src="/img/logo.png" alt="Logo Cripto Correio Elegante">
+            <img src="{{ asset('img/logo.png') }}" alt="Logo Cripto Correio Elegante">
         </a>
 
         <div class="barraNav"></div>
@@ -30,13 +30,13 @@
             <div class="sessaoInicioConteudo">
                 <div class="containerImagens">
                     <div class="imagem">
-                        <img src="/img/casalGay.png" alt="Imagem de Casal Gay dentro de um Circulo">
+                        <img src="{{ asset('img/casalGay.png') }}" alt="Imagem de Casal Gay dentro de um Circulo">
                     </div>
                     <div class="imagem">
-                        <img src="/img/casalHetero.png" alt="Imagem de Casal Hetero dentro de um Circulo">
+                        <img src="{{ asset('img/casalHetero.png') }}" alt="Imagem de Casal Hetero dentro de um Circulo">
                     </div>
                     <div class="imagem">
-                        <img src="/img/casalLesbico.png" alt="Imagem de Casal Lesbico dentro de um Circulo">
+                        <img src="{{ asset('img/casalLesbico.png') }}" alt="Imagem de Casal Lesbico dentro de um Circulo">
                     </div>
                 </div>
 
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <a href="./recado.html" class="opcaoEstouProntoRemetente">Estou pronto(a)!</a>
+            <a href="{{ url('/') }}" class="opcaoEstouProntoRemetente">Estou pronto(a)!</a>
 
             <!-- Usei o site Shape Divider APP para isso -->
             <div class="wave2">
@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="opcaoEstouProntoDestinatario">Estou pronto(a)!</a>
+            <a href="{{url('/teste')}}" class="opcaoEstouProntoDestinatario">Estou pronto(a)!</a>
         </section>
     </main>
 
@@ -154,10 +154,10 @@
             <div class="dev">
                 <div class="icones">
                     <a href="https://github.com/LarissaSL" target="_blank" class="footerLink">
-                        <img src="/img/github.png" alt="Logo do GitHub">
+                        <img src="{{ asset('img/github.png') }}" alt="Logo do GitHub">
                     </a>
                     <a href="https://www.linkedin.com/in/larissasilvasl/" target="_blank" class="footerLink">
-                        <img src="/img/linkedin.png" alt="Logo do LinkedIn">
+                        <img src="{{ asset('img/linkedin.png') }}" alt="Logo do LinkedIn">
                     </a>
                 </div>
                 <p class="texto">
@@ -168,7 +168,7 @@
             <div class="design">
                 <div class="icones">
                     <a href="http://www.freepik.com" target="_blank" class="footerLink">
-                        <img src="/img/freepik.png" alt="Logo do Freepik">
+                        <img src="{{ asset('img/freepik.png') }}" alt="Logo do Freepik">
                     </a>
                 </div>
                 <p class="texto">
